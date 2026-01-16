@@ -108,33 +108,20 @@
         </div>
       </div>
 
-
-       <!-- ===== BANDE PARTENAIRES ===== -->
-  
       <!-- Carrousel Logos (Fond transparent) -->
       <div class="icaise-logos-carousel" aria-label="Partners Carousel">
-          <!-- BANDE DÉCORATIVE DERRIÈRE LES LOGOS -->
-       <!-- <div class="icaise-logos-band"></div>-->
-          <div class="icaise-carousel-track">
-            <div class="icaise-logo-partner" title="USMS"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/usms.png" alt="USMS"></div>
-            <div class="icaise-logo-partner" title="FPBM"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/logoFP2.png" alt="FPBM"></div>
-            <div class="icaise-logo-partner" title="ENSI"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/ENSI.png" alt="ENSI"></div>
-            <div class="icaise-logo-partner" title="LIMATI"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/LIMATI.png" alt="LIMATI"></div>
-            <!-- Duplication -->
-            <div class="icaise-logo-partner" title="USMS"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/usms.png" alt="USMS"></div>
-            <div class="icaise-logo-partner" title="FPBM"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/logoFP2.png" alt="FPBM"></div>
-            <div class="icaise-logo-partner" title="ENSI"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/ENSI.png" alt="ENSI"></div>
-            <div class="icaise-logo-partner" title="LIMATI"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/LIMATI.png" alt="LIMATI"></div>
-          </div>
+        <div class="icaise-carousel-track">
+          <div class="icaise-logo-partner" title="USMS"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/usms.png" alt="USMS"></div>
+          <div class="icaise-logo-partner" title="FPBM"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/logoFP2.png" alt="FPBM"></div>
+          <div class="icaise-logo-partner" title="ENSI"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/ENSI.png" alt="ENSI"></div>
+          <div class="icaise-logo-partner" title="LIMATI"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/LIMATI.png" alt="LIMATI"></div>
+          <!-- Duplication -->
+          <div class="icaise-logo-partner" title="USMS"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/usms.png" alt="USMS"></div>
+          <div class="icaise-logo-partner" title="FPBM"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/logoFP2.png" alt="FPBM"></div>
+          <div class="icaise-logo-partner" title="ENSI"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/ENSI.png" alt="ENSI"></div>
+          <div class="icaise-logo-partner" title="LIMATI"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/LIMATI.png" alt="LIMATI"></div>
         </div>
-          
-  
-
-
-      
-</div>
-
-
+      </div>
     </div>
 
     <div class="icaise-springer-strip">
@@ -174,80 +161,9 @@
   .icaise-wrapper { padding: 20px 0; width: 100%; box-sizing: border-box; }
   .icaise-wrapper *, .icaise-wrapper *::before, .icaise-wrapper *::after { box-sizing: inherit; }
 
-
-/* BANDE DÉCORATIVE DERRIÈRE LES LOGOS */
-.icaise-logos-band {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, 
-    rgba(16, 185, 129, 0.1) 0%, 
-    rgba(16, 185, 129, 0.15) 25%,
-    rgba(6, 78, 59, 0.2) 50%,
-    rgba(16, 185, 129, 0.15) 75%,
-    rgba(16, 185, 129, 0.1) 100%);
-  border-radius: 12px;
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  box-shadow: 
-    0 5px 15px rgba(0, 0, 0, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  pointer-events: none;
-  transform: perspective(500px) rotateY(-5deg);
-  overflow: hidden;
-}
-
-/* Effet de lumière sur la bande */
-.icaise-logos-band::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, 
-    transparent, 
-    rgba(255, 255, 255, 0.2), 
-    transparent);
-  animation: icaise-band-shine 6s infinite linear;
-  z-index: 2;
-}
-
-@keyframes icaise-band-shine {
-  0% { left: -100%; }
-  100% { left: 100%; }
-}
-
-
-            /* ===============================
-          BANDE LOGOS – VERSION ACADÉMIQUE
-          =============================== */
-
-        .icaise-partners-band {
-          position: relative;
-          z-index: 18;
-          padding: 16px 10px;
-          margin-left: 10px;
-
-          /* Fond très discret */
-          background: rgba(255, 255, 255, 0.85);
-
-          /* Séparation subtile */
-          border-left: 1px solid rgba(0,0,0,0.06);
-          border-right: 1px solid rgba(0,0,0,0.06);
-
-          /* Pas d’ombre lourde */
-          box-shadow: none;
-        }
-
-
   /* =========================================
        CSS SCOPED (Sécurisé)
        ========================================= */
-
 
   .icaise-header {
     display: block;
