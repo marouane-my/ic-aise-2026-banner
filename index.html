@@ -170,41 +170,32 @@
   .icaise-wrapper { padding: 20px 0; width: 100%; box-sizing: border-box; }
   .icaise-wrapper *, .icaise-wrapper *::before, .icaise-wrapper *::after { box-sizing: inherit; }
 
+
+            /* ===============================
+          BANDE LOGOS – VERSION ACADÉMIQUE
+          =============================== */
+
+        .icaise-partners-band {
+          position: relative;
+          z-index: 18;
+          padding: 16px 10px;
+          margin-left: 10px;
+
+          /* Fond très discret */
+          background: rgba(255, 255, 255, 0.85);
+
+          /* Séparation subtile */
+          border-left: 1px solid rgba(0,0,0,0.06);
+          border-right: 1px solid rgba(0,0,0,0.06);
+
+          /* Pas d’ombre lourde */
+          box-shadow: none;
+        }
+
+
   /* =========================================
        CSS SCOPED (Sécurisé)
        ========================================= */
-
-       /* ===============================
-   BANDE LOGOS PARTENAIRES
-   =============================== */
-
-.icaise-partners-band {
-  position: relative;
-  z-index: 18; /* sous logos mais au-dessus du décor */
-  padding: 20px 10px;
-  border-radius: 16px;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(6,78,59,0.92),
-      rgba(16,185,129,0.92),
-      rgba(6,78,59,0.92)
-    );
-  box-shadow:
-    inset 0 0 25px rgba(255,255,255,0.15),
-    0 8px 25px rgba(0,0,0,0.15);
-  margin-left: 10px;
-}
-
-/* Logos bien visibles */
-.icaise-partners-band .icaise-logo-partner img {
-  filter: brightness(1.15) contrast(1.1);
-}
-
-/* Hover propre */
-.icaise-partners-band .icaise-logo-partner:hover {
-  transform: scale(1.08);
-}
 
 
   .icaise-header {
