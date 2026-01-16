@@ -1,0 +1,557 @@
+<!-- WRAPPER POUR L'INTÉGRATION -->
+<div id="icaise-wrapper" class="icaise-wrapper">
+
+  <!-- HEADER PRINCIPAL -->
+  <header class="icaise-header" role="banner">
+    
+    <!-- 🎨 COUCHE DÉCORATION IA -->
+    <div class="icaise-decoration-layer">
+      <div class="icaise-neural-grid"></div>
+      <div class="icaise-floating-brain icaise-main-brain"><i class="fas fa-brain"></i></div>
+      <div class="icaise-floating-brain icaise-ghost-brain icaise-b1"><i class="fas fa-microchip"></i></div>
+      <div class="icaise-floating-brain icaise-ghost-brain icaise-b2"><i class="fas fa-network-wired"></i></div>
+      <div class="icaise-floating-brain icaise-ghost-brain icaise-b3"><i class="fas fa-atom"></i></div>
+      <div class="icaise-floating-brain icaise-ghost-brain icaise-b4"><i class="fas fa-dna"></i></div>
+    </div>
+
+    <!-- 🖼️ Fond Photos -->
+    <div class="icaise-bg-overlay">
+      <div class="icaise-bg-left"></div>
+      <div class="icaise-bg-right"></div>
+    </div>
+
+    <!-- CANVAS ID UNIQUE -->
+    <canvas id="icaise-canvas"></canvas>
+
+    <!-- 📢 Ticker -->
+    <div class="icaise-top">
+      <div class="icaise-ticker-wrapper">
+        <span class="icaise-ticker-item"><i class="far fa-file-alt"></i> <span class="icaise-ticker-event">Submission:</span> <span class="icaise-ticker-date">Feb 1, 2026</span></span>
+        <span class="icaise-ticker-item"><i class="fas fa-envelope-open-text"></i> <span class="icaise-ticker-event">Notification:</span> <span class="icaise-ticker-date">Mar 10, 2026</span></span>
+        <span class="icaise-ticker-item"><i class="fas fa-save"></i> <span class="icaise-ticker-event">Final Version:</span> <span class="icaise-ticker-date">Mar 20, 2026</span></span>
+        <span class="icaise-ticker-item"><i class="fas fa-ticket-alt"></i> <span class="icaise-ticker-event">Registration:</span> <span class="icaise-ticker-date">Mar 21 - Apr 23</span></span>
+        <span class="icaise-ticker-item"><i class="fas fa-calendar-check"></i> <span class="icaise-ticker-event">IC-AISE’26:</span> <span class="icaise-ticker-date">April 23–24, 2026</span></span>
+        <!-- Duplication -->
+        <span class="icaise-ticker-item"><i class="far fa-file-alt"></i> <span class="icaise-ticker-event">Submission:</span> <span class="icaise-ticker-date">Feb 1, 2026</span></span>
+        <span class="icaise-ticker-item"><i class="fas fa-envelope-open-text"></i> <span class="icaise-ticker-event">Notification:</span> <span class="icaise-ticker-date">Mar 10, 2026</span></span>
+        <span class="icaise-ticker-item"><i class="fas fa-save"></i> <span class="icaise-ticker-event">Final Version:</span> <span class="icaise-ticker-date">Mar 20, 2026</span></span>
+        <span class="icaise-ticker-item"><i class="fas fa-ticket-alt"></i> <span class="icaise-ticker-event">Registration:</span> <span class="icaise-ticker-date">Mar 21 - Apr 23</span></span>
+        <span class="icaise-ticker-item"><i class="fas fa-calendar-check"></i> <span class="icaise-ticker-event">IC-AISE’26:</span> <span class="icaise-ticker-date">April 23–24, 2026</span></span>
+      </div>
+    </div>
+
+    <div class="icaise-content">
+      <!-- SECTION LOGO -->
+      <div class="icaise-logo-section">
+        <!-- 🌟 HALO DORÉ PULSANT (Retour à la normale) -->
+        <div class="icaise-logo-glow"></div>
+        <svg class="icaise-circuit-overlay" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10,100 L60,100 L70,80" class="icaise-circuit-path"/>
+          <path d="M10,120 L50,120 L60,140" class="icaise-circuit-path"/>
+          <circle cx="10" cy="100" r="3" class="icaise-circuit-pad"/>
+          <circle cx="10" cy="120" r="3" class="icaise-circuit-pad"/>
+          <path d="M190,100 L140,100 L130,80" class="icaise-circuit-path"/>
+          <path d="M190,120 L150,120 L140,140" class="icaise-circuit-path"/>
+          <circle cx="190" cy="100" r="3" class="icaise-circuit-pad"/>
+          <circle cx="190" cy="120" r="3" class="icaise-circuit-pad"/>
+        </svg>
+        <img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/IC-AISE.png" alt="IC-AISE Logo" class="icaise-logo-img">
+      </div>
+
+      <!-- Conteneur Titre -->
+      <div class="icaise-title-container">
+        <!-- 🌟 MOTIF HEXAGONAL DERRIÈRE LE TITRE -->
+        <div class="icaise-hex-pattern"></div>
+        
+        <!-- 🌟 TITRE : STATIQUE (PAS D'ANIMATION) -->
+        <h1 class="icaise-title">
+          International Conference on AI in<br>Systems Engineering
+        </h1>
+        
+        <!-- 🌊 Ondes Continues -->
+        <div class="icaise-waves-container">
+          <div class="icaise-wave-line"></div>
+          <div class="icaise-wave-line"></div>
+          <div class="icaise-wave-line"></div>
+          <div class="icaise-wave-line"></div>
+        </div>
+
+        <!-- 🌟 BADGE : PAS DE FADE IN -->
+        <a href="https://ic-aise.sciencesconf.org/" target="_blank" class="icaise-badge">IC-AISE'2026</a>
+        
+        <!-- ⏱️ Compte à rebours : PAS DE FADE IN -->
+        <div class="icaise-countdown-container">
+          <div class="icaise-countdown-title">Conference starts in:</div>
+          <div class="icaise-countdown-timer">
+            <div class="icaise-countdown-item">
+              <span class="icaise-countdown-value" id="icaise-days">00</span>
+              <span class="icaise-countdown-label">Days</span>
+            </div>
+            <div class="icaise-countdown-item">
+              <span class="icaise-countdown-value" id="icaise-hours">00</span>
+              <span class="icaise-countdown-label">Hours</span>
+            </div>
+            <div class="icaise-countdown-item">
+              <span class="icaise-countdown-value" id="icaise-minutes">00</span>
+              <span class="icaise-countdown-label">Mins</span>
+            </div>
+            <div class="icaise-countdown-item">
+              <span class="icaise-countdown-value" id="icaise-seconds">00</span>
+              <span class="icaise-countdown-label">Secs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="icaise-date-container">
+          <div class="icaise-date-chip"><i class="fas fa-map-marker-alt"></i> Béni Mellal, Morocco</div>
+          <div class="icaise-hybrid-badge"><i class="fas fa-broadcast-tower"></i> Hybride</div>
+        </div>
+      </div>
+
+      <!-- Carrousel Logos (Fond transparent) -->
+      <div class="icaise-logos-carousel" aria-label="Partners Carousel">
+        <div class="icaise-carousel-track">
+          <div class="icaise-logo-partner" title="USMS"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/usms.png" alt="USMS"></div>
+          <div class="icaise-logo-partner" title="FPBM"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/logoFP2.png" alt="FPBM"></div>
+          <div class="icaise-logo-partner" title="ENSI"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/ENSI.png" alt="ENSI"></div>
+          <div class="icaise-logo-partner" title="LIMATI"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/LIMATI.png" alt="LIMATI"></div>
+          <!-- Duplication -->
+          <div class="icaise-logo-partner" title="USMS"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/usms.png" alt="USMS"></div>
+          <div class="icaise-logo-partner" title="FPBM"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/logoFP2.png" alt="FPBM"></div>
+          <div class="icaise-logo-partner" title="ENSI"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/ENSI.png" alt="ENSI"></div>
+          <div class="icaise-logo-partner" title="LIMATI"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/LIMATI.png" alt="LIMATI"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="icaise-springer-strip">
+      <div class="icaise-springer-text">Indexed in Springer Communications in Computer and Information Science (CCIS)</div>
+      <div class="icaise-logos-container">
+        <div class="icaise-logo-container"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/springer.jpg" alt="Springer" class="icaise-springer-logo"></div>
+        <div class="icaise-logo-container"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/CCIS.png" alt="CCIS" class="icaise-springer-logo"></div>
+        <div class="icaise-logo-container"><img src="https://raw.githubusercontent.com/marouane-my/Logo_Images/main/Scopus_logo.svg.png" alt="Scopus" class="icaise-springer-logo"></div>
+      </div>
+    </div>
+
+    <div class="icaise-footer">
+      <span><i class="fas fa-calendar-check"></i> April 23–24, 2026</span>
+      <span><i class="fas fa-university"></i> FPBM, Sultan Moulay Slimane University</span>
+      <span><i class="fas fa-globe"></i> ic-aise.sciencesconf.org</span>
+    </div>
+  </header>
+
+</div>
+
+<style>
+  /* Importation */
+  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Montserrat:wght@400;600&display=swap');
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+  /* 🌿 Variables */
+  .icaise-header {
+    --primary-green: #10b981;
+    --dark-green: #064e3b;
+    --accent-green: #34d399;
+    --fire-orange: #f97316;
+    --fire-yellow: #fbbf24;
+    --ai-accent: #34d399; 
+  }
+
+  /* Reset interne */
+  .icaise-wrapper { padding: 20px 0; width: 100%; box-sizing: border-box; }
+  .icaise-wrapper *, .icaise-wrapper *::before, .icaise-wrapper *::after { box-sizing: inherit; }
+
+  /* =========================================
+       CSS SCOPED (Sécurisé)
+       ========================================= */
+
+  .icaise-header {
+    display: block;
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #ffffff;
+    color: #374151;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    border:1px solid rgba(16, 185, 129, 0.3);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Décoration */
+  .icaise-decoration-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; pointer-events: none; z-index: 2; }
+  .icaise-neural-grid {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, var(--ai-accent) 1.5px, transparent 1.5px);
+    background-size: 40px 40px;
+    mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    opacity: 0.4;
+  }
+  .icaise-floating-brain {
+    position: absolute; display: flex; align-items: center; justify-content: center;
+    animation: icaise-pulse-glow 4s ease-in-out infinite; font-size: 2.5rem; color: var(--primary-green);
+  }
+  .icaise-main-brain { top: 12%; left: 50%; transform: translate(-50%, 0); font-size: 3rem; filter: drop-shadow(0 0 15px rgba(52, 211, 153, 0.5)); z-index: 3; opacity: 1; }
+  .icaise-ghost-brain { opacity: 0.3; filter: blur(1.5px); font-size: 2rem; }
+  .icaise-b1 { top: 30%; left: 35%; animation-delay: 0.5s; }
+  .icaise-b2 { top: 20%; right: 25%; animation-delay: 1.5s; font-size: 2.2rem;}
+  .icaise-b3 { bottom: 25%; left: 28%; animation-delay: 2.2s; }
+  .icaise-b4 { bottom: 15%; right: 30%; animation-delay: 3s; font-size: 2.5rem;}
+
+  @keyframes icaise-pulse-glow {
+    0%, 100% { transform: scale(1) translateY(0); opacity: 0.8; }
+    50% { transform: scale(1.1) translateY(-8px); opacity: 1; filter: drop-shadow(0 0 20px rgba(52, 211, 153, 0.9)); }
+  }
+
+  /* Backgrounds */
+  .icaise-bg-overlay { position: absolute; top: 50px; left: 0; width: 100%; height: calc(100% - 50px - 60px); display: flex; z-index: 1; pointer-events: none; }
+  .icaise-bg-left, .icaise-bg-right { flex:1; position: relative; height: 100%; opacity: 0.95; filter: saturate(1.7) contrast(1.2); }
+  .icaise-bg-left::before, .icaise-bg-right::before {
+    content: ''; position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; background-size: cover; background-position: center;
+  }
+  .icaise-bg-left::before {
+    background-image: url('https://raw.githubusercontent.com/marouane-my/Logo_Images/main/ain%20assrdoune.jpeg');
+    mask-image: linear-gradient(to right, rgba(0,0,0,0.1) 0%, black 30%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.1) 0%, black 30%, transparent 100%);
+  }
+  .icaise-bg-right::before {
+    background-image: url('https://raw.githubusercontent.com/marouane-my/Logo_Images/main/Ouzoud.jpg');
+    background-position: center 20%; 
+    mask-image: linear-gradient(to left, rgba(0,0,0,0.1) 0%, black 30%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.1) 0%, black 30%, transparent 100%);
+  }
+
+  /* Ticker */
+  .icaise-top {
+    background: linear-gradient(90deg, var(--dark-green), var(--primary-green), var(--dark-green));
+    height: 50px; position: relative; z-index: 10; display: flex; align-items: center; overflow: hidden;
+    border-bottom:1px solid rgba(255,255,255,0.2); box-shadow: 0 4px 10px rgba(0,0,0,0.1); white-space: nowrap;
+  }
+  .icaise-ticker-wrapper { display: inline-block; padding-left: 100%; animation: icaise-ticker 65s linear infinite; }
+  .icaise-top:hover .icaise-ticker-wrapper { animation-play-state: paused; cursor: default; }
+  .icaise-ticker-item {
+    display: inline-block; padding: 0 2.5rem; font-size: 0.9rem; font-weight: 600; color: #ffffff; 
+    border-right:1px solid rgba(255,255,255,0.3); display: inline-flex; align-items: center; gap: 8px;
+  }
+  .icaise-ticker-date { color: var(--fire-yellow); font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+  .icaise-ticker-event { color: #ffffff; }
+
+  @keyframes icaise-ticker { 0% { transform: translate3d(0, 0, 0); } 100% { transform: translate3d(-100%, 0, 0); } }
+
+  /* Content Layout */
+  .icaise-content {
+    max-width: 1200px; margin: 0 auto; padding: 40px 20px 40px; display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; position: relative; z-index: 5; min-height: 320px;
+  }
+
+  /* Logo */
+  .icaise-logo-section { position: relative; display: flex; align-items: center; justify-content: center; width: auto; min-width: 200px; max-width: 260px; z-index: 6; }
+  .icaise-logo-glow {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 220px; height: 220px;
+    /* 🌟 RETOUR HALO DORÉ PULSANT */
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    z-index: 2;
+    animation: icaise-glowPulse 4s ease-in-out infinite alternate;
+  }
+  @keyframes icaise-glowPulse { 0% { opacity: 0.7; transform: translate(-50%, -50%) scale(0.95); } 100% { opacity: 1; transform: translate(-50%, -50%) scale(1.05); } }
+  
+  .icaise-circuit-overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 250px; height: 250px; z-index: 1; pointer-events: none; }
+  .icaise-circuit-path { fill: none; stroke: var(--primary-green); stroke-width: 2; opacity: 0.9; stroke-linecap: round; }
+  .icaise-circuit-pad { fill: var(--primary-green); stroke: var(--dark-green); stroke-width: 1; }
+  
+  .icaise-logo-img { height: 200px; z-index: 3; position: relative; transition: transform 0.3s; }
+  .icaise-logo-img:hover { transform: scale(1.02); }
+
+  /* Title */
+  .icaise-title-container {
+    flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto;
+    position: relative; z-index: 6; text-align: center;
+  }
+  .icaise-hex-pattern {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 150%;
+    z-index: -1; opacity: 0.08;
+    background-image: url('data:image/svg+xml;utf8,<svg width="60" height="70" xmlns="http://www.w3.org/2000/svg"><path d="M30 0 L60 17.32 L60 51.96 L30 69.28 L0 51.96 L0 17.32 Z" fill="none" stroke="%2310b981" stroke-width="2"/></svg>');
+    background-size: 60px 70px;
+  }
+  .icaise-title {
+    font-family: 'Rajdhani', sans-serif; 
+    font-size: 3.8em;
+    font-weight: 800; color: var(--dark-green);
+    text-transform: uppercase; letter-spacing: 1px;
+    text-shadow: 0px 0px 10px rgba(255,255,255,1), 2px 2px 4px rgba(0,0,0,0.2); 
+    margin-bottom: 5px; position: relative; z-index: 5; line-height: 1.1;
+    animation: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .icaise-title::after {
+    content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
+    width: 120px; height: 4px; background: linear-gradient(90deg, transparent, var(--primary-green), transparent); border-radius: 2px;
+  }
+
+  /* Waves */
+  .icaise-waves-container { position: absolute; bottom: 10px; left: 0; width: 100%; height: 60px; overflow: hidden; z-index: 1; pointer-events: none; }
+  .icaise-wave-line {
+    position: absolute; top: 0; left: 0; width: 200%; height: 100%; background-repeat: repeat-x; background-position: 0 bottom;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 2000 100" xmlns="http://www.w3.org/2000/svg"><path d="M0,50 C500,0 1000,100 2000,50" fill="none" stroke="currentColor" stroke-width="4"/></svg>');
+    background-size: 50% 100%; animation: icaise-moveWave linear infinite;
+  }
+  .icaise-wave-line:nth-child(1) { stroke: var(--primary-green); bottom: 0px; animation-duration: 12s; opacity: 0.25; z-index: 1; }
+  .icaise-wave-line:nth-child(2) { stroke: var(--accent-green); bottom: 10px; animation-duration: 16s; animation-direction: reverse; opacity: 0.2; z-index: 2; }
+  .icaise-wave-line:nth-child(3) { stroke: var(--fire-yellow); bottom: 20px; animation-duration: 20s; opacity: 0.15; z-index: 3; }
+  .icaise-wave-line:nth-child(4) { stroke: var(--fire-orange); bottom: 30px; animation-duration: 10s; opacity: 0.1; z-index: 4; }
+  @keyframes icaise-moveWave { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+  /* Badge */
+  .icaise-badge {
+    display: inline-block; background: linear-gradient(90deg, rgba(249,115,22,0) 0%, rgba(249,115,22,1) 20%, rgba(251,191,36,1) 50%, rgba(249,115,22,1) 80%, rgba(249,115,22,0) 100%);
+    color: #fff; padding: 10px 40px; border-radius: 50px; font-family: 'Rajdhani', sans-serif; font-size: 1.3em; font-weight: 700;
+    text-decoration: none; margin-top: 30px; box-shadow: 0 5px 15px rgba(249, 115, 22, 0.3);
+    position: relative; z-index: 10; transition: all 0.3s ease; border: 1px solid rgba(251, 191, 36, 0.5);
+  }
+  .icaise-badge:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(249, 115, 22, 0.5); filter: brightness(1.1); }
+
+  /* Countdown */
+  .icaise-countdown-container { margin-top: 20px; text-align: center; z-index: 10; position: relative; }
+  .icaise-countdown-title { font-family: 'Rajdhani', sans-serif; font-size: 0.85em; color: var(--dark-green); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+  .icaise-countdown-timer { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
+  .icaise-countdown-item {
+    display: flex; flex-direction: column; align-items: center; background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    padding: 6px 10px; border-radius: 8px; min-width: 55px;
+    border: 1px solid rgba(16, 185, 129, 0.4); box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  }
+  .icaise-countdown-value { font-family: 'Rajdhani', sans-serif; font-size: 1.4em; font-weight: 700; color: var(--primary-green); }
+  .icaise-countdown-label { font-size: 0.6em; color: #6b7280; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+
+  .icaise-date-container {
+    display: inline-flex; align-items: center; gap: 15px; flex-wrap: wrap; justify-content: center;
+    position: relative; z-index: 10; margin-top: 15px;
+  }
+  .icaise-date-chip {
+    display:inline-flex; align-items: center; gap: 6px; background: #ffffff; color:#374151; padding:5px 15px; border-radius:20px;
+    font-weight:600; border: 1px solid #e5e7eb; font-size: 0.85em; box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  }
+  .icaise-hybrid-badge {
+    background: linear-gradient(135deg, var(--primary-green), var(--dark-green)); color: #fff; padding: 5px 12px; border-radius: 20px;
+    font-size: 0.75em; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+  }
+
+  /* Logos Carousel (Fond transparent) */
+  .icaise-logos-carousel { width: 140px; height: 290px; overflow: hidden; position: relative; z-index: 6; }
+  .icaise-carousel-track {
+    display: flex; flex-direction: column; align-items: center; gap: 8px; animation: icaise-scrollLogos 20s linear infinite; padding-top: 5px; width: 100%;
+  }
+  @keyframes icaise-scrollLogos { 0% { transform: translateY(0); } 100% { transform: translateY(-50%); } }
+  .icaise-logos-carousel:hover .icaise-carousel-track { animation-play-state: paused; }
+  
+  /* 🌟 PARTENAIRES : Fond Transparent (Suppression du jaune) */
+  .icaise-logo-partner {
+    background: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    height: 65px;
+    width: auto;
+    max-width: 120px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .icaise-logo-partner img {
+    height: 100%; width: auto; object-fit: contain; display: block; border-radius: 4px;
+  }
+  /* Effet hover vert standard */
+  .icaise-logo-partner:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.4));
+  }
+
+  /* Springer */
+  .icaise-springer-strip {
+    background: #ffffff; padding: 10px 20px; text-align: center; display: flex; align-items: center; justify-content: center; gap: 20px;
+    position: relative; z-index: 10; border-top: 1px solid rgba(0,0,0,0.05);
+  }
+  .icaise-springer-text { font-size: 0.9em; font-weight: 600; color: #374151; }
+  .icaise-logos-container { display: flex; align-items: center; gap: 15px; }
+  .icaise-logo-container { height: 35px; padding: 0 5px; filter: none; opacity: 1; transition: all 0.3s ease; }
+  .icaise-logo-container:hover { transform: scale(1.1); }
+  .icaise-springer-logo { height: 100%; width: auto; object-fit: contain; }
+
+  /* Footer */
+  .icaise-footer {
+    background: linear-gradient(90deg, var(--dark-green), var(--primary-green)); color: #ffffff;
+    display: flex; justify-content: center; align-items: center; gap: 30px; padding: 15px 0; font-size: 0.9em;
+    position: relative; z-index: 10; border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .icaise-footer span { display: flex; align-items: center; gap: 8px; font-weight: 500; }
+  .icaise-footer i { color: var(--fire-yellow); }
+
+  /* Canvas */
+  #icaise-canvas { position: absolute; top: 50px; left: 0; width: 100%; height: calc(100% - 50px - 60px); z-index: 3; pointer-events: none; opacity: 1; }
+
+  /* Responsive */
+  @media (max-width: 992px) {
+    .icaise-bg-left::before { mask-image: linear-gradient(to right, rgba(0,0,0,0.2) 0%, black 20%, transparent 100%); -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.2) 0%, black 20%, transparent 100%); }
+    .icaise-bg-right::before { mask-image: linear-gradient(to left, rgba(0,0,0,0.2) 0%, black 20%, transparent 100%); -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.2) 0%, black 20%, transparent 100%); }
+    .icaise-logo-section { max-width: 200px; }
+    .icaise-logo-img { height: 160px; }
+    .icaise-circuit-overlay { width: 200px; height: 200px; }
+    .icaise-logo-glow { width: 180px; height: 180px; }
+    .icaise-main-brain { top: 15%; font-size: 2.5rem; left: 50%; }
+    .icaise-ghost-brain { font-size: 1.5rem; }
+    .icaise-b3, .icaise-b4 { display: none; }
+    .icaise-hex-pattern { width: 500px; }
+  }
+
+  @media (max-width: 768px) {
+    .icaise-header { width: 100%; border-radius: 0; }
+    .icaise-bg-overlay { display: none; }
+    .icaise-neural-grid { opacity: 0.5; }
+    .icaise-content { flex-direction: column; text-align: center; padding-top: 40px; min-height: auto; }
+    .icaise-logo-section { margin: 0 auto 20px; width: 100%; max-width: none; }
+    .icaise-logo-img { height: 130px; }
+    .icaise-title-container { margin: 0; padding: 0 10px; width: 100%; }
+    .icaise-title { font-size: 2.4em; }
+    #icaise-canvas { display: none; }
+    .icaise-logos-carousel {
+      flex-direction: row; width: 100%; height: auto; overflow-x: auto; overflow-y: hidden;
+      margin-top: 20px; border-left: none; border-top: 1px solid rgba(16, 185, 129, 0.2); padding: 10px 0;
+    }
+    .icaise-carousel-track {
+      flex-direction: row; width: max-content; animation: icaise-scrollLogosMobile 15s linear infinite; padding-top: 0; padding-left: 15px;
+    }
+    @keyframes icaise-scrollLogosMobile { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .icaise-logo-partner { width: 60px; height: 60px; margin: 0 10px; }
+    .icaise-springer-strip { flex-direction: column; gap: 10px; padding: 15px; }
+    .icaise-footer { flex-direction: column; gap: 10px; font-size: 0.8em; padding: 15px 0; }
+    .icaise-ticker-item { font-size: 0.75rem; padding: 0 1rem; }
+    .icaise-countdown-timer { gap: 5px; }
+    .icaise-countdown-item { min-width: 45px; padding: 4px 6px; }
+    .icaise-countdown-value { font-size: 1.2em; }
+  }
+</style>
+
+<script>
+  (function() {
+    // Countdown
+    function updateCountdown() {
+      const conferenceDate = new Date('April 23, 2026 09:00:00').getTime();
+      const now = new Date().getTime();
+      const distance = conferenceDate - now;
+      
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+      const elDays = document.getElementById('icaise-days');
+      const elHours = document.getElementById('icaise-hours');
+      const elMins = document.getElementById('icaise-minutes');
+      const elSecs = document.getElementById('icaise-seconds');
+
+      if(elDays) elDays.textContent = days.toString().padStart(2, '0');
+      if(elHours) elHours.textContent = hours.toString().padStart(2, '0');
+      if(elMins) elMins.textContent = minutes.toString().padStart(2, '0');
+      if(elSecs) elSecs.textContent = seconds.toString().padStart(2, '0');
+    }
+    
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Particles
+    const canvas = document.getElementById('icaise-canvas');
+    if(canvas) {
+      const ctx = canvas.getContext('2d');
+      
+      function resizeCanvas() {
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+      }
+      resizeCanvas();
+
+      const particles = [];
+      const particleCount = 70;
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.size = Math.random() * 2.5 + 1;
+          this.speedX = Math.random() * 0.5 - 0.25;
+          this.speedY = Math.random() * 0.5 - 0.25;
+          this.color = Math.random() > 0.5 ? '#064e3b' : '#10b981';
+          this.opacity = Math.random() * 0.6 + 0.4;
+        }
+        update() {
+          this.x += this.speedX;
+          this.y += this.speedY;
+          if(this.x > canvas.width) this.x = 0;
+          if(this.x < 0) this.x = canvas.width;
+          if(this.y > canvas.height) this.y = 0;
+          if(this.y < 0) this.y = canvas.height;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.globalAlpha = this.opacity;
+          ctx.fill();
+        }
+      }
+      
+      function initParticles() {
+        for(let i =0; i < particleCount; i++) {
+          particles.push(new Particle());
+        }
+      }
+      
+      function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(particle => {
+          particle.update();
+          particle.draw();
+        });
+        for(let i =0; i < particles.length; i++) {
+          for(let j = i; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            if(distance < 120) {
+              ctx.beginPath();
+              ctx.strokeStyle = '#064e3b';
+              ctx.globalAlpha = 0.25 * (1 - distance/120);
+              ctx.lineWidth = 1.5;
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.stroke();
+            }
+          }
+        }
+        requestAnimationFrame(animateParticles);
+      }
+      
+      initParticles();
+      animateParticles();
+      
+      window.addEventListener('resize', () => {
+        resizeCanvas();
+        particles.length = 0;
+        initParticles();
+      });
+    }
+
+    // Parallax
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const rate = scrolled * -0.1;
+      const aiLayer = document.querySelector('.icaise-decoration-layer');
+      if(aiLayer) {
+        aiLayer.style.transform = `translate3d(0, ${rate}px, 0)`;
+      }
+    });
+  })();
+</script>
